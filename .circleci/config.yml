@@ -1,0 +1,10 @@
+orbs:
+  netsparker: netsparker/scan@1.0.4
+version: 2.1
+workflows:
+  example-workflow:
+    jobs:
+      - netsparker/scan:
+          api_url: https://f811b2fd.ngrok.io
+          website_id: 93b8669c-6704-44aa-2a30-ab42018950e8 
+          scan_type: FullWithPrimaryProfile
